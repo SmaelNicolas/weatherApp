@@ -15,5 +15,46 @@ body {
 .container {
   width: 800px;
   height: 400px;
-  background-color: green;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.data {
+  width: 70%;
+  height: 100%;
+  background-color: pink;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.cityName {
+}
+.temperature {
+}
+.feelsLike {
+}
+.humidity {
+}
+.wind {
+}
+
+.iconCoord {
+  width: 29%;
+  height: 100%;
+  background-color: blue;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.weather {
+}
+.wIcon {
+}
+.wDescription {
+}
+
+.coords {
 }
