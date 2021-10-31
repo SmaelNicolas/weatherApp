@@ -5,6 +5,10 @@ const initFetch = (string) => {
     .then((response) => response.json())
     .then((data) => {
       APP(data);
+      let inputInfo = document.getElementById("inputInfo");
+      inputInfo.style.display = "none";
+      let container = document.getElementById("container");
+      container.style.display = "flex";
     })
     .catch((error) => {
       console.log(error);
@@ -23,11 +27,11 @@ const setCityName = (cityName, country) => {
 };
 
 const setTemp = (temperature) => {
-  document.getElementById("temp").innerHTML = temperature;
+  document.getElementById("temp").innerHTML = Math.floor(temperature);
 };
 
 const setFeelsLike = (feelsLike) => {
-  document.getElementById("feelsLike").innerHTML = feelsLike;
+  document.getElementById("feelsLike").innerHTML = Math.floor(feelsLike);
 };
 
 const setHumidiy = (humidity) => {
@@ -76,7 +80,7 @@ const APP = (data) => {
   setWind(wind);
   setClouds(clouds);
   setWeatherDescription(weatherDescription);
-  setCoords(coordLat, coordLon);
+  // setCoords(coordLat, coordLon);
   setIcon(icon);
 };
 
@@ -88,10 +92,7 @@ const startApp = () => {
       let value = document.getElementById("inputValue").value;
       if (isNaN(value.toString())) {
         initFetch(value);
-        let inputInfo = document.getElementById("inputInfo");
-        inputInfo.style.display = "none";
-        let container = document.getElementById("container");
-        container.style.display = "flex";
+
         console.log(value);
       } else {
         alert("Ingrese un texto");
@@ -103,10 +104,7 @@ const startApp = () => {
     let value = document.getElementById("inputValue").value;
     if (isNaN(value.toString())) {
       initFetch(value);
-      let inputInfo = document.getElementById("inputInfo");
-      inputInfo.style.display = "none";
-      let container = document.getElementById("container");
-      container.style.display = "flex";
+
       console.log(value);
     } else {
       alert("Ingrese un texto");

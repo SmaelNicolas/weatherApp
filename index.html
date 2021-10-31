@@ -16,7 +16,7 @@
 
         <div class="inputInfo" id="inputInfo">
             <p class="inputText">INGRESE LOCALIDAD</p>
-            <input class="value" id="inputValue" type="text">
+            <input class="value" id="inputValue" autofocus type="text">
             <input class="button" type="button" id="start" value="Consultar">
         </div>
 
@@ -24,20 +24,26 @@
 
 
             <section class="data">
-                <div class="cityName" id="cityName"></div>
-                <div class="temperature">Temp <span id="temp"></span></div>
-                <div class="feelsLike">ST <span id="feelsLike"></span></div>
-                <div class="humidity">Humedad <span id="humidity"></span>%</div>
-                <div class="wind">Viento <span id="wind"></span> m/s</div>
-                <div class="clouds">Nubosidad <span id="clouds"></span>%</div>
+                <div class="dataTitleCity" id="cityName"></div>
+                <div class="dataTitle">Temperatura: <span class="temperatureValue" id="temp"></span>°</div>
+                <div class="dataTitle">Sensación Térmica: <span class="feelsLikeValue" id="feelsLike"></span>°</div>
+                <div class="dataTitle">Humedad: <span class="humidityValue" id="humidity"></span>%</div>
+                <div class="dataTitle">Viento: <span class="windValue" id="wind"></span> m/s</div>
+                <div class="dataTitle">Nubosidad: <span class="cloudsValue" id="clouds"></span>%</div>
             </section>
 
             <section class="iconCoord">
+
                 <div class="weather">
-                    <div class="wIcon"><img id="wIcon" src="" alt="icono del clima"></div>
+                    <div class="wIcon"><img class="wImage" id="wIcon" src="" alt="icono del clima"></div>
                     <div class="wDescription"> <span id="weather"></span></div>
                 </div>
-                <div class="coords">Latitude <span id="lat"></span> Longitud <span id="lon"></span></div>
+
+                <!-- <div class="coordsContainer">
+                    <div class="coords">Latitude <span class="coordsValue" id="lat"></span></div>
+                    <div class="coords">Longitud <span class="coordsValue" id="lon"></span></div>
+                </div> -->
+
             </section>
 
         </div>
