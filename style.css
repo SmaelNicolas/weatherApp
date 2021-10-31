@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,11 +12,12 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
+  font-family: "Montserrat", sans-serif;
 }
 
 .container {
   width: 800px;
-  height: 400px;
+  height: 350px;
 
   display: flex;
   flex-direction: row;
@@ -26,35 +29,53 @@ body {
   background-color: pink;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .cityName {
+  font-size: 50px;
 }
 .temperature {
+  font-size: 30px;
 }
 .feelsLike {
+  font-size: 30px;
 }
 .humidity {
+  font-size: 30px;
 }
 .wind {
+  font-size: 30px;
 }
 
 .iconCoord {
   width: 29%;
   height: 100%;
-  background-color: blue;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .weather {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
 }
 .wIcon {
 }
 .wDescription {
+  font-size: 30px;
 }
 
 .coords {
+  font-size: 20px;
 }
