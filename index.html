@@ -12,31 +12,37 @@
 
 <body>
 
-    <div class="inputInfo" id="inputInfo">
-        <p class="inputText">Ingrese localidad</p>
-        <input class="value" id="inputValue" type="text">
-        <input type="button" id="start" value="Consultar">
-    </div>
+    <main class="main">
 
-    <div class="container" id="container">
+        <div class="inputInfo" id="inputInfo">
+            <p class="inputText">INGRESE LOCALIDAD</p>
+            <input class="value" id="inputValue" type="text">
+            <input class="button" type="button" id="start" value="Consultar">
+        </div>
+
+        <div class="container" id="container">
 
 
-        <section class="data">
-            <div class="cityName" id="cityName"></div>
-            <div class="temperature">Temp <span id="temp"></span></div>
-            <div class="feelsLike">ST <span id="feelsLike"></span></div>
-            <div class="humidity">Humedad <span id="humidity"></span>%</div>
-            <div class="wind">Viento <span id="wind"></span> m/s</div>
-            <div class="clouds">Nubosidad <span id="clouds"></span>%</div>
-        </section>
-        <section class="iconCoord">
-            <div class="weather">
-                <div class="wIcon"><img id="wIcon" src="" alt="icono del clima"></div>
-                <div class="wDescription"> <span id="weather"></span></div>
-            </div>
-            <div class="coords">Latitude <span id="lat"></span> Longitud <span id="lon"></span></div>
-        </section>
-    </div>
+            <section class="data">
+                <div class="cityName" id="cityName"></div>
+                <div class="temperature">Temp <span id="temp"></span></div>
+                <div class="feelsLike">ST <span id="feelsLike"></span></div>
+                <div class="humidity">Humedad <span id="humidity"></span>%</div>
+                <div class="wind">Viento <span id="wind"></span> m/s</div>
+                <div class="clouds">Nubosidad <span id="clouds"></span>%</div>
+            </section>
+
+            <section class="iconCoord">
+                <div class="weather">
+                    <div class="wIcon"><img id="wIcon" src="" alt="icono del clima"></div>
+                    <div class="wDescription"> <span id="weather"></span></div>
+                </div>
+                <div class="coords">Latitude <span id="lat"></span> Longitud <span id="lon"></span></div>
+            </section>
+
+        </div>
+
+    </main>
 
 
 
