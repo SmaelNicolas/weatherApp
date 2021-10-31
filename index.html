@@ -12,14 +12,22 @@
 
 <body>
 
-    <div class="container">
+    <div class="inputInfo" id="inputInfo">
+        <p class="inputText">Ingrese localidad</p>
+        <input class="value" id="inputValue" type="text">
+        <input type="button" id="start" value="Consultar">
+    </div>
+
+    <div class="container" id="container">
+
+
         <section class="data">
             <div class="cityName" id="cityName"></div>
             <div class="temperature">Temp <span id="temp"></span></div>
             <div class="feelsLike">ST <span id="feelsLike"></span></div>
-            <div class="humidity">Humedad <span id="humidity"></span></div>
-            <div class="wind">Viento <span id="wind"></span></div>
-            <div class="clouds">Nubosidad <span id="clouds"></span></div>
+            <div class="humidity">Humedad <span id="humidity"></span>%</div>
+            <div class="wind">Viento <span id="wind"></span> m/s</div>
+            <div class="clouds">Nubosidad <span id="clouds"></span>%</div>
         </section>
         <section class="iconCoord">
             <div class="weather">
